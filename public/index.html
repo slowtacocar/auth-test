@@ -11,8 +11,12 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <a href="login.html">Log in</a>
+    <div class="container">
+      <h1>Hello, world!</h1>
+      <a class="btn btn-primary" href="login.html">Log in</a>
+      <button class="btn btn-secondary" id="sign-out">Sign Out</button>
+      <table class="table" id="table"></table>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -25,10 +29,13 @@
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.15.1/firebase-firestore.js"></script>
     <script src="/__/firebase/7.15.1/firebase-analytics.js"></script>
     <script src="/__/firebase/7.15.0/firebase-auth.js"></script>
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
+
+    <script src="database.js"></script>
   </body>
 </html>
