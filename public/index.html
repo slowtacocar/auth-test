@@ -15,12 +15,15 @@
       <h1>Hello, world!</h1>
       <a class="btn btn-primary" href="login.html">Log in</a>
       <button class="btn btn-secondary" id="sign-out">Sign Out</button>
-      <table class="table" id="table">
-        <tr>
-          <th><input type="text" class="form-control" id="key" placeholder="Key"></th>
-          <th><input type="text" class="form-control" id="value" placeholder="Value"></th>
-          <th><button class="btn btn-primary" id="add">Add</button></th>
-        </tr>
+      <table class="table">
+        <thead>
+          <tr>
+            <th><input type="text" class="form-control" id="key" placeholder="Key"></th>
+            <th><input type="text" class="form-control" id="value" placeholder="Value"></th>
+            <th><button class="btn btn-primary" id="add">Add</button></th>
+          </tr>
+        </thead>
+        <tbody id="table"></tbody>
       </table>
     </div>
 
