@@ -7,13 +7,9 @@ ui.start('#firebaseui-auth-container', {
       // Return type determines whether we continue the redirect automatically
       // or whether we leave that to developer to handle.
       return true;
-    },
-    uiShown: function() {
-      // The widget is rendered.
-      // Hide the loader.
-      document.getElementById('loader').style.display = 'none';
     }
   },
+  signInSuccessUrl: 'index.html',
   signInOptions: [
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     firebase.auth.EmailAuthProvider.PROVIDER_ID
